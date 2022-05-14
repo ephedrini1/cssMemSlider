@@ -65,34 +65,33 @@
     box-sizing: border-box;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    background-image: url("assets/image/slide1.jpg");
     animation: border-transform 6s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     animation-play-state: paused;
   }
   .control.control-1 + label {
-    background-image: url("assets/image/slide1.jpg");
+    background-image: url("assets/images/slide1.jpg");
     margin-right: 12.5rem;
   }
   .control.control-2 + label {
-    background-image: url("assets/image/slide2.jpg");
+    background-image: url("assets/images/slide2.jpg");
     margin-right: 10rem;
   }
   .control.control-3 + label {
-    background-image: url("assets/image/slide3.jpg");
+    background-image: url("assets/images/slide3.jpg");
     margin-right: 7.5rem;
   }
   .control.control-4 + label {
-    background-image: url("assets/image/slide4.jpg");
+    background-image: url("assets/images/slide4.jpg");
     margin-right: 5rem;
   }
   .control.control-5 + label {
-    background-image: url("assets/image/slide5.jpg");
+    background-image: url("assets/images/slide5.jpg");
     margin-right: 2.5rem;
   }
   .control.control-6 + label {
-    background-image: url("assets/image/slide6.jpg");
+    background-image: url("assets/images/slide6.jpg");
     margin-right: 0;
   }
   .control:hover + label {
@@ -158,33 +157,33 @@
   }
   
   .slide__list .slide__item:nth-child(1) {
-    background: url("assets/image/slide1.jpg") no-repeat center;
+    background: url("assets/images/slide1.jpg") no-repeat center;
     background-size: cover;
     transform: rotateY(-180deg);
 
   }
   .slide__list .slide__item:nth-child(2) {
-    background: url("assets/image/slide2.jpg") no-repeat center;
+    background: url("assets/images/slide2.jpg") no-repeat center;
     background-size: cover;
     transform: translateY(-100%) rotateY(-180deg);
   }
   .slide__list .slide__item:nth-child(3) {
-    background: url("assets/image/slide3.jpg") no-repeat center;
+    background: url("assets/images/slide3.jpg") no-repeat center;
     background-size: cover;
     transform: translateY(-200%) rotateY(-180deg);
   }
   .slide__list .slide__item:nth-child(4) {
-    background: url("assets/image/slide4.jpg") no-repeat center;
+    background: url("assets/images/slide4.jpg") no-repeat center;
     background-size: cover;
     transform: translateY(-300%) rotateY(-180deg);
   }
   .slide__list .slide__item:nth-child(5) {
-    background: url("assets/image/slide5.jpg") no-repeat center;
+    background: url("assets/images/slide5.jpg") no-repeat center;
     background-size: cover;
     transform: translateY(-400%) rotateY(-180deg);
   }
   .slide__list .slide__item:nth-child(6) {
-    background: url("assets/image/slide6.jpg") no-repeat center;
+    background: url("assets/images/slide6.jpg") no-repeat center;
     background-size: cover;
     transform: translateY(-500%) rotateY(-180deg);
   }
