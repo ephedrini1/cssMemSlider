@@ -43,10 +43,13 @@
   .control:not(:checked) + label {
     grid-area: control;
     justify-self: flex-end;
+    display: flex;
+    justify-content: stretch;
     cursor: pointer;
     text-align: center;
-    display: inline-block;
-    width: 2.2rem;
+    width: 3rem;
+    height: 3rem;
+    /* width: 2.2rem;
     height: 2.2rem;
     margin-top: 0.5rem;
     margin-right: 0.5rem;
@@ -59,36 +62,68 @@
     animation: border-transform 6s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
+    animation-play-state: paused; */
+  }
+  .control:checked + label span,
+  .control:not(:checked) + label span{
+    display: inline-block;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0.5rem;
+    border: 0.15rem solid var(--color-border);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    animation: border-transform 6s linear infinite alternate forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
     animation-play-state: paused;
   }
   .control.control-1 + label {
-    background-image: url("assets/images/slide1.jpg");
     margin-right: 12.5rem;
   }
-  .control.control-2 + label {
-    background-image: url("assets/images/slide2.jpg");
+  .control.control-1 + label span{
+    background-image: url("assets/images/slide1.jpg");
+    
+  }
+  .control.control-2 + label{
     margin-right: 10rem;
+
+  }
+  .control.control-2 + label span{
+    background-image: url("assets/images/slide2.jpg");
   }
   .control.control-3 + label {
-    background-image: url("assets/images/slide3.jpg");
     margin-right: 7.5rem;
+
+  }
+  .control.control-3 + label span{
+    background-image: url("assets/images/slide3.jpg");
   }
   .control.control-4 + label {
-    background-image: url("assets/images/slide4.jpg");
     margin-right: 5rem;
+
   }
-  .control.control-5 + label {
-    background-image: url("assets/images/slide5.jpg");
+  .control.control-4 + label span{
+    background-image: url("assets/images/slide4.jpg");
+  }
+  .control.control-5 + label{
     margin-right: 2.5rem;
+
   }
-  .control.control-6 + label {
+  .control.control-5 + label span{
+    background-image: url("assets/images/slide5.jpg");
+  }
+  .control.control-6 + label span{
     background-image: url("assets/images/slide6.jpg");
     margin-right: 0;
   }
-  .control:hover + label {
+  .control:hover + label span{
     box-shadow: 0 0.5rem 1.5rem 0 var(--shadow);
   }
-  .control:checked + label {
+  .control:checked + label span{
     box-shadow: 0 0.5rem 1.5rem 0 var(--shadow);
     transform: scale(1.3);
     -webkit-animation-play-state: running;
@@ -275,30 +310,36 @@
     }
     .control:checked + label,
     .control:not(:checked) + label {
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 2.5rem;
+      height: 2.5rem;
       justify-self: center;
       align-self: center;
     }
+    .control:checked + label span,
+    .control:not(:checked) + label span{
+      width: 2rem;
+      height: 2rem;
+      margin: 0.25rem;
+    }
     .control.control-1 + label{
-      margin-right: 8.8rem;
+      margin-right: 11.5rem;
     }
     .control.control-2 + label{
-      margin-right: 5.3rem;
+      margin-right: 6.9rem;
     }
     .control.control-3 + label{
-      margin-right: 1.8rem;
+      margin-right: 2.3rem;
     }
     .control.control-4 + label{
-      margin-right: -1.8rem;
+      margin-right: -2.3rem;
     }
   
     .control.control-5 + label{
-      margin-right: -5.3rem;
+      margin-right: -6.9rem;
     }
   
     .control.control-6 + label{
-      margin-right: -8.8rem;
+      margin-right: -11.5rem;
     }
     .slide__list .slide__item {
       height: 60vh;
